@@ -23,7 +23,6 @@ var applyDiscounts = function(items, priceBeforeDiscounts) {
             return 15;
     });
     return priceBeforeDiscounts - discount;
-
 };
 
 Checkout.prototype.price = function(listOfItems) {
@@ -32,4 +31,3 @@ Checkout.prototype.price = function(listOfItems) {
     console.log(priceBeforeDiscounts);
     return applyDiscounts(items, priceBeforeDiscounts);
 };
-
